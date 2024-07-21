@@ -15,6 +15,6 @@ For the Javascript section, I decide use classes and methods, from OOP.
 
 
 
-
+## This is the [link](https://github.com/Arirockdev/time-tracking-dashboard-with-tailwind.git) for the deploy project.
 
 **Have fun building!** 🚀
