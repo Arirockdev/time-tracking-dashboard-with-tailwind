@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/css/output.css" />
+    <link rel="stylesheet" href="./src/css/fonts.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body class="bg-veryDarkBlue">
+    <div
+      class="container mt-28 p-3 grid gap-6 m-auto grid-cols-1 xl:grid-cols-12 2xl:w-[75%] xl:w-[100%] lg:w-[100%] lg:m-auto lg:mt-16 md:w-[100%]"
+    >
+      <header class="bg-darkBlue rounded-lg xl:col-[1/4] xl:row-[1/4]">
+        <div
+          class="user flex xl:flex xl:flex-col xl:items-start xl:p-8 gap-6 p-6 rounded-lg bg-blueProject items-center"
+        >
+          <img
+            class="w-[80px] max-w-[100%] h-auto block border-2 border-white rounded-[100%]"
+            src="./src/images/image-jeremy.png"
+            alt="Jeremy avatar"
+          />
+          <div class="user-title w-[100%] pb-8">
+            <p
+              class="text-desaturatedBlue xl:text-paleBlue font-normal xl:text-sm"
+            >
+              Report for
+            </p>
+            <h1
+              class="text-paleBlue text-2xl xl:text-4xl xl:font-light xl:mt-4"
+            >
+              Jeremy Robson
+            </h1>
+          </div>
+        </div>
+        <ul
+          class="flex justify-around p-4 text-desaturatedBlue xl:flex xl:flex-col xl:p-8 xl:gap-4"
+        >
+          <li
+            id="day"
+            class="hover:cursor-pointer hover:text-paleBlue hover:font-semibold xl:hover:cursor-pointer xl:hover:text-paleBlue xl:hover:font-semibold"
+          >
+            Daily
+          </li>
+          <li
+            id="week"
+            class="hover:cursor-pointer hover:text-paleBlue hover:font-semibold xl:hover:cursor-pointer xl:hover:text-paleBlue xl:hover:font-semibold"
+          >
+            Weekly
+          </li>
+          <li
+            id="month"
+            class="hover:cursor-pointer hover:text-paleBlue hover:font-semibold xl:hover:cursor-pointer xl:hover:text-paleBlue xl:hover:font-semibold"
+          >
+            Monthly
+          </li>
+        </ul>
+      </header>
+      <main
+        class="grid xl:col-[4/13] xl:row-[1/4] xl:grid-cols-3 xl:grid-rows-2 gap-6 lg:grid-cols-3 md:grid-cols-2 "
+      >
+        <div
+          class="card bg-lightRedWork pt-10 bg-icon-work bg-right-top bg-no-repeat rounded-b-[25px] rounded-t-[15px] xl:flex"
+        >
+          <div
+            class="bg-darkBlue p-6 rounded-[15px] xl:w-full hover:cursor-pointer hover:bg-darkBlueAlpha"
+          >
+            <div class="title flex justify-between">
+              <h2 class="text-paleBlue xl:text-xl"></h2>
+              <div class="flex items-center">
+                <img
+                  class="hover:cursor-pointer"
+                  src="./src/images/icon-ellipsis.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="timer flex justify-between items-center xl:flex xl:flex-col xl:items-start xl:mt-6 xl:gap-6"
+            >
+              <p class="text-paleBlue text-4xl xl:text-[50px] xl:font-light">
+              <span>32</span>hrs
+              </p>
+              <p class="text-desaturatedBlue text-sm">
+                Last Week - <span class="text-desaturatedBlue">36</span>hrs 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-softBluePlay pt-10 bg-icon-play bg-right-top bg-no-repeat rounded-b-[25px] rounded-t-[15px] xl:flex"
+        >
+          <div
+            class="bg-darkBlue p-6 rounded-[15px] xl:w-full hover:cursor-pointer hover:bg-darkBlueAlpha"
+          >
+            <div class="title flex justify-between">
+              <h2 class="text-paleBlue xl:text-xl"></h2>
+              <div class="flex items-center">
+                <img
+                  class="hover:cursor-pointer"
+                  src="./src/images/icon-ellipsis.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="timer flex justify-between items-center xl:flex xl:flex-col xl:items-start xl:mt-6 xl:gap-6"
+            >
+              <p class="text-paleBlue text-4xl xl:text-[50px] xl:font-light">
+               <span>10</span>hrs
+              </p>
+              <p class="text-desaturatedBlue text-sm">
+                Last Week - <span class="text-desaturatedBlue">8</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-lightRedStudy pt-10 bg-icon-study bg-right-top bg-no-repeat rounded-b-[25px] rounded-t-[15px] xl:flex"
+        >
+          <div
+            class="bg-darkBlue p-6 rounded-[15px] xl:w-full hover:cursor-pointer hover:bg-darkBlueAlpha"
+          >
+            <div class="title flex justify-between">
+              <h2 class="text-paleBlue xl:text-xl"></h2>
+              <div class="flex items-center">
+                <img
+                  class="hover:cursor-pointer"
+                  src="./src/images/icon-ellipsis.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="timer flex justify-between items-center xl:flex xl:flex-col xl:items-start xl:mt-6 xl:gap-6"
+            >
+              <p class="text-paleBlue text-4xl xl:text-[50px] xl:font-light">
+              <span>4</span>hrs
+              </p>
+              <p class="text-desaturatedBlue text-sm">
+                Last Week - <span class="text-desaturatedBlue">7</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-limeGreenExercise pt-10 bg-icon-exercise bg-right-top bg-no-repeat rounded-b-[25px] rounded-t-[15px] xl:flex"
+        >
+          <div
+            class="bg-darkBlue p-6 rounded-[15px] xl:w-full hover:cursor-pointer hover:bg-darkBlueAlpha"
+          >
+            <div class="title flex justify-between">
+              <h2 class="text-paleBlue xl:text-xl"></h2>
+              <div class="flex items-center">
+                <img
+                  class="hover:cursor-pointer"
+                  src="./src/images/icon-ellipsis.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="timer flex justify-between items-center xl:flex xl:flex-col xl:items-start xl:mt-6 xl:gap-6"
+            >
+              <p class="text-paleBlue text-4xl xl:text-[50px] xl:font-light">
+                <span>4</span>hrs
+              </p>
+              <p class="text-desaturatedBlue text-sm">
+                Last Week - <span class="text-desaturatedBlue">5</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-violetSocial pt-10 bg-icon-social bg-right-top bg-no-repeat rounded-b-[25px] rounded-t-[15px] xl:flex"
+        >
+          <div
+            class="bg-darkBlue p-6 rounded-[15px] xl:w-full hover:cursor-pointer hover:bg-darkBlueAlpha"
+          >
+            <div class="title flex justify-between">
+              <h2 class="text-paleBlue xl:text-xl"></h2>
+              <div class="flex items-center">
+                <img
+                  class="hover:cursor-pointer"
+                  src="./src/images/icon-ellipsis.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="timer flex justify-between items-center xl:flex xl:flex-col xl:items-start xl:mt-6 xl:gap-6"
+            >
+              <p class="text-paleBlue text-4xl xl:text-[50px] xl:font-light">
+                <span>5</span>hrs
+              </p>
+              <p class="text-desaturatedBlue text-sm">
+                Last Week - <span class="text-desaturatedBlue">10</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-softOrangeSelfCare pt-10 bg-icon-self-care bg-right-top bg-no-repeat rounded-b-[25px] rounded-t-[15px] xl:flex"
+        >
+          <div
+            class="bg-darkBlue p-6 rounded-[15px] xl:w-full hover:cursor-pointer hover:bg-darkBlueAlpha"
+          >
+            <div class="title flex justify-between">
+              <h2 class="text-paleBlue xl:text-xl"></h2>
+              <div class="flex items-center">
+                <img
+                  class="hover:cursor-pointer"
+                  src="./src/images/icon-ellipsis.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="timer flex justify-between items-center xl:flex xl:flex-col xl:items-start xl:mt-6 xl:gap-6"
+            >
+              <p class="text-paleBlue text-4xl xl:text-[50px] xl:font-light">
+                <span>2</span>hrs
+              </p>
+              <p class="text-desaturatedBlue text-sm">
+                Last Week - <span class="text-desaturatedBlue">2</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="xl:col-[1/13] xl:row-[4/5]">
+        <div class="attribution text-white">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a class="text-limeGreenExercise visited:text-lightRedWork" href="#">Arirockdev.</a>
+        </div>
+      </footer>
+    </div>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
